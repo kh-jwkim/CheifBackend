@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HelloWeb</title>
+	</head>
+	<body>
+		<h1>Hello, Web</h1>
+		<form action="/HelloServlet" method="post">
+			<!-- 
+	        method 방식
+	        1. get : url에 입력한 값이 보임, 쿼리스트링이 보임
+	        2. post : url에 입력한 값이 안보임
+	        * 쿼리스트링 : ? 이하의 사용자가 입력한 데이터(키와 밸류로 매핑되어있음)
+	        GET방식 - http://127.0.0.1:5500/member/login.do?userId=111&userPw=222
+	        POST방식 - http://127.0.0.1:5500/member/login.do
+	        위의 2가지 메소드에 따라 쿼리스트링이 다르게 나온다!!
+	    	-->
+			ID : <input type="text" name="member-id">
+			PW : <input type="password" name="member-pw">
+			<input type="submit" value="로그인">
+		</form>
+	</body>
+</html>
